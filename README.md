@@ -8,4 +8,4 @@ dessa matéria abrange conteúdos de :
   <li>Árvores</li>
   <li>Ordenação</li>
 <ul>
-  img src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif" />
+  <img src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif" />
