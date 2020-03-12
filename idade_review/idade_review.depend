@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1584031636 source:c:\users\facom\desktop\idade_review\main.c
+	<stdio.h>
+	<stdlib.h>
+
