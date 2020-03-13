@@ -12,14 +12,14 @@ int main()
     {
         scanf("%d",&vet1[i]);
     }
-    for(int i=2; i<=0; i--)
+    for(int i=2; i>=0; i--)
     {
         vet2[j] = vet1[i];
         j++;
     }
     for(int i=0; i<=2; i++)
     {
-        printf("%d", vet2[i]);
+        printf("%d \n", vet2[i]);
     }
 
     return 0;
