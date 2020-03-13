@@ -3,6 +3,7 @@
 
 int main()
 {
+//hehe comentei
     float custo_de_fabrica, custo_consumidor, porcentagem_dist, impostos;
     scanf("%f",&custo_de_fabrica);
     porcentagem_dist = (28 * custo_de_fabrica) /100;
