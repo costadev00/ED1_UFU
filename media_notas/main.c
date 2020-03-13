@@ -12,19 +12,24 @@ int main()
     scanf("%f",&exam_final);
     exam_final = exam_final * 0.5;
     nota_final = trab_lab + aval_sems + exam_final;
-    if(nota_final>=8.01 && nota_final<=10.0){
+    if(nota_final>=8.01 && nota_final<=10.0)
+    {
         conceito = 'A';
     }
-    else if(nota_final>=7.01 && nota_final<=8.0){
+    else if(nota_final>=7.01 && nota_final<=8.0)
+    {
         conceito = 'B';
     }
-    else if(nota_final>=6.01 && nota_final<=7.0){
+    else if(nota_final>=6.01 && nota_final<=7.0)
+    {
         conceito = 'C';
     }
-    else if(nota_final>=5.01 && nota_final<=6.0){
+    else if(nota_final>=5.01 && nota_final<=6.0)
+    {
         conceito = 'D';
     }
-    else {
+    else
+    {
         conceito = 'E';
     }
     printf("%f", nota_final);
