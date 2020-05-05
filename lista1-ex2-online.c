@@ -1,3 +1,8 @@
+/*
+02 - Faça um algoritmo que receba dois números e execute as operações listadas a seguir,
+de acordo com a escolha do usuário. (2,5 pontos utilize switch case).
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 int main()
