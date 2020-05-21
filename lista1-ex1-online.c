@@ -8,13 +8,13 @@ média 7. (2,5 pontos).
 #include <stdlib.h>
 int main()
 {
-    double n1, n2, n3, n4, media;
-    scanf("%lf", &n1);
-    scanf("%lf", &n2);
-    scanf("%lf", &n3);
-    scanf("%lf", &n4);
+    float n1, n2, n3, n4, media;
+    scanf("%f", &n1);
+    scanf("%f", &n2);
+    scanf("%f", &n3);
+    scanf("%f", &n4);
     media = (n1 + n2 + n3 + n4) / 4;
-    printf("media = %.2lf\n", media);
+    printf("media = %.2f\n", media);
     if (media >= 7)
     {
         printf("aprovado\n");
