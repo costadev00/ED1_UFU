@@ -8,17 +8,23 @@ troca deverá ficar desta forma X=2, Y=1.
 int main()
 {
     int x, y;
-    int *res;
+    int *p1, *p2;
+    printf("digite o valor de x: \n");
     scanf("%d", &x); //1
+    printf("digite o valor de y: \n");
     scanf("%d", &y); //2
-    trocaNumeros(x, y);
+    p1 = &x;
+    p2 = &y;
+    trocaNumeros(*p1, *p2);
     return 0;
 }
 void trocaNumeros(x1, y1)
 {
-    int *pointx, *pointy;
-    pointx = y1;
-    pointy = x1;
-    printf("x = %d\n", pointx);
-    printf("y = %d\n", pointy);
+    printf("trocando os valores...\n");
+    int temp;
+    temp = x1;
+    x1 = y1;
+    y1 = temp;
+    printf("x = %d\n", x1);
+    printf("y = %d\n", y1);
 }
