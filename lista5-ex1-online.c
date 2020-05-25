@@ -1,5 +1,6 @@
 /*
-
+01 – Faça um algoritmo que leia um vetor de 5 posições. Mostre os valores do vetor
+incrementando o ponteiro.
 */
 #include <stdio.h>
 #include <stdlib.h>
