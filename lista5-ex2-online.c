@@ -5,9 +5,11 @@
 #include <stdlib.h>
 int main()
 {
-    int *n;
+    int *ptr;
+    int n;
     scanf("%d", &n);
-    int res = dobrarValor(n);
+    ptr = &n;
+    int res = dobrarValor(*ptr);
     printf("%d\n", res);
     return 0;
 }
