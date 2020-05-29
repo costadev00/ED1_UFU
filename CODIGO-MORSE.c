@@ -72,8 +72,8 @@ void decodifica(const char *morse)
 int main(void)
 {
     int op = 0;
-    char text[50];
-    char test[50];
+    char text1[50];
+    char text2[50];
     printf("\t\t\t\tDigite sua opcao\n1_Codificar\n2_Decodificar\n:");
     scanf("%d", &op);
     switch (op)
@@ -81,21 +81,21 @@ int main(void)
     case 1:
     {
         printf("Digite seu texto a ser codificado\n");
-        scanf(" %[^\n]", text);
-        codifica(text);
+        scanf(" %[^\n]", text1);
+        codifica(text1);
         break;
     }
     case 2:
     {
         printf("Digite seu texto a ser decodificado\n");
-        scanf(" %[^\n]", test);
+        scanf(" %[^\n]", text2);
         int len;
-        len = strlen(test);
-        if (test[len - 1] != ' ')
+        len = strlen(text2);
+        if (text2[len - 1] != ' ')
         {
-            strcat(test, " "); //se falta space .. coloca um ;)
+            strcat(text2, " "); //se falta space .. coloca um ;)
         }
-        decodifica(test);
+        decodifica(text2);
         break;
     }
     default:
