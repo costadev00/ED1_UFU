@@ -20,5 +20,5 @@ dessa matéria abrange conteúdos de :
   </center>
   <br>
   <center>
-  <img src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif" width="346" height="413" />
+  <img src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif"/>
     </center>
