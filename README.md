@@ -20,5 +20,7 @@ dessa matéria abrange conteúdos de :
   </center>
   <br>
   <center>
+  <div style="width: 1000px; height: 600px;">
   <img src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif" />
+  </div>
     </center>
