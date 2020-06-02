@@ -1,6 +1,11 @@
 /*
-01 – Faça um algoritmo que adicione 10 valores na pilha 
-e depois mostre a soma desses valores.
+03 – Faça um algoritmo que contenha as seguintes opções: 
+1 - Adicionar um valor na pilha
+2 - Retirar um número 
+3 - Mostrar qual número está no topo da pilha 
+4 - Mostrar todos os numeros da pilha 
+0 - Sair 
+
 */
 #include <stdio.h>
 #include <stdlib.h>

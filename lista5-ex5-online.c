@@ -1,5 +1,5 @@
 /*
-05 – Faça um algoritmo que leia n caracteres até q o usuário digite ‘.’(ponto final). Depois ao
+05 – Faça um algoritmo que leia n caracteres até q o usuário digite ‘.’(ponto final). Depois ao final
 mostrar coloque um ‘!’ (ponto de exclamação) no final do texto.
 */
 #include <stdio.h>

@@ -1,6 +1,10 @@
 /*
-01 – Faça um algoritmo que adicione 10 valores na pilha 
-e depois mostre a soma desses valores.
+02 – Faça um algoritmo que contenha as seguintes opções: 
+1 - Adicionar um prato na pilha 
+2 - Retirar um prato da pilha 
+3 - Mostrar quantos pratos a pilha possui 
+0 - Sair 
+
 */
 #include <stdio.h>
 #include <stdlib.h>
