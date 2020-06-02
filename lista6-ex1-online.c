@@ -1,3 +1,7 @@
+/*
+01 – Faça um algoritmo que adicione 10 valores na pilha 
+e depois mostre a soma desses valores.
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,58 +17,10 @@ typedef struct
 
 void inicia_pilha(pilha *p);
 
-void push(pilha *p, int x);
 int pop(pilha *p);
-
-int mostrar_pilha(pilha p);
-
+void push(pilha *p, int x);
+int mostrar_soma();
 ///////////////////////////////
-
-int main()
-{
-
-    pilha p;
-    inicia_pilha(&p);
-
-    int aux;
-
-    push(&p, 1);
-    printf("\n1 Adicionado\n");
-
-    push(&p, 2);
-    printf("\n2 Adicionado\n");
-
-    push(&p, 3);
-    printf("\n3 Adicionado\n");
-
-    mostrar_pilha(p);
-
-    aux = pop(&p);
-    printf("\n%d foi retirado\n", aux);
-
-    mostrar_pilha(p);
-
-    push(&p, 4);
-    printf("\n4 Adicionado\n");
-
-    aux = pop(&p);
-    printf("\n%d foi retirado\n", aux);
-
-    push(&p, 5);
-    printf("\n5 Adicionado\n\n");
-
-    mostrar_pilha(p);
-
-    return 0;
-}
-
-//////////////////////////////
-
-void inicia_pilha(pilha *p)
-{
-    (*p).topo = -1;
-}
-
 void push(pilha *p, int x)
 {
     if ((*p).topo == max - 1)
@@ -96,16 +52,47 @@ int pop(pilha *p)
     }
 }
 
-int mostrar_pilha(pilha p)
+void inicia_pilha(pilha *p)
+{
+    (*p).topo = -1;
+}
+///////////////////////////////
+///////////////////////////////
+
+int main()
 {
 
-    int aux;
+    pilha p;
+    inicia_pilha(&p);
 
+    int res;
+
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+    push(&p, 1);
+
+    res = mostrar_soma(p);
+    printf("Soma = %d\n", res);
+    return 0;
+}
+
+int mostrar_soma(pilha p)
+{
+    int aux;
+    int soma = 0;
     if (p.topo != -1)
     {
         while (p.topo != -1)
         {
             aux = pop(&p);
+            soma = soma + aux;
             printf("[%d]\t", aux);
         }
         printf("\n");

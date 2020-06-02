@@ -1,7 +1,10 @@
+/*
+
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
-#define max 10
+#define max 999
 
 typedef struct
 {
@@ -12,59 +15,11 @@ typedef struct
 ///////////////////////////////
 
 void inicia_pilha(pilha *p);
-
-void push(pilha *p, int x);
 int pop(pilha *p);
-
+void push(pilha *p, int x);
+void verifica(p1, p2, p3);
 int mostrar_pilha(pilha p);
-
 ///////////////////////////////
-
-int main()
-{
-
-    pilha p;
-    inicia_pilha(&p);
-
-    int aux;
-
-    push(&p, 1);
-    printf("\n1 Adicionado\n");
-
-    push(&p, 2);
-    printf("\n2 Adicionado\n");
-
-    push(&p, 3);
-    printf("\n3 Adicionado\n");
-
-    mostrar_pilha(p);
-
-    aux = pop(&p);
-    printf("\n%d foi retirado\n", aux);
-
-    mostrar_pilha(p);
-
-    push(&p, 4);
-    printf("\n4 Adicionado\n");
-
-    aux = pop(&p);
-    printf("\n%d foi retirado\n", aux);
-
-    push(&p, 5);
-    printf("\n5 Adicionado\n\n");
-
-    mostrar_pilha(p);
-
-    return 0;
-}
-
-//////////////////////////////
-
-void inicia_pilha(pilha *p)
-{
-    (*p).topo = -1;
-}
-
 void push(pilha *p, int x)
 {
     if ((*p).topo == max - 1)
@@ -96,6 +51,10 @@ int pop(pilha *p)
     }
 }
 
+void inicia_pilha(pilha *p)
+{
+    (*p).topo = -1;
+}
 int mostrar_pilha(pilha p)
 {
 
@@ -114,4 +73,34 @@ int mostrar_pilha(pilha p)
     {
         return -1;
     }
+}
+///////////////////////////////
+///////////////////////////////
+
+int main()
+{
+    pilha p1;
+    int j = 0;
+    inicia_pilha(&p1);
+    char frase[100], saida[100];
+    fgets(frase, 100, stdin);
+    for (int i = 0; frase[i] != '\0'; i++)
+    {
+        if (frase[i] != ' ' && frase[i] != '.')
+        {
+            push(&p1, frase[i]);
+        }
+        else
+        {
+            while (p1.topo != -1)
+            {
+                saida[j] = pop(&p1);
+                j++;
+            }
+            saida[j++] = ' ';
+        }
+    }
+    saida[j++] = '\0';
+    puts(saida);
+    return 0;
 }
