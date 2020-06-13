@@ -11,7 +11,7 @@ dessa matéria abrange conteúdos de :
   <li>Pilhas - <b>(Lista 6)</b></li>
   <li>Filas - <b>(Lista 7)</b></li>
   <li>Listas Encadeadas</li>
-  <li>Listas Duplamente Encadeadas <b>(Lista 8)</b></li>
+  <li>Listas Duplamente Encadeadas - <b>(Lista 8)</b></li>
   <li>Recursividade</li>
   <li>Métodos de Ordenação</li>
   <li>Árvores</li>
