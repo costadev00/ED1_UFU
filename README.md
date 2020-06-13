@@ -2,7 +2,7 @@
 Repositório criado para o armazenamento de códigos da matéria de Estrutura de Dados 1 da Universidade Federal de Uberlândia. O conteúdo 
 dessa matéria abrange conteúdos de :
 <center><ul>
-  <li>Arrays Unidimensionais e Multidimencionais</li> <p>(Lista 2)</p>
+  <li>Arrays Unidimensionais e Multidimencionais <b>(Lista 2)</b></li>
   <li>Funções</li><p>(Lista 3)</p>
   <li>Strings</li><p>(Lista 4)</p>
   <li>Structs</li><p>(Lista 4)</p>
