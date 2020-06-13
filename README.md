@@ -2,14 +2,14 @@
 Repositório criado para o armazenamento de códigos da matéria de Estrutura de Dados 1 da Universidade Federal de Uberlândia. O conteúdo 
 dessa matéria abrange conteúdos de :
 <center><ul>
-  <li>Arrays Unidimensionais e Multidimencionais <b>(Lista 2)</b></li>
-  <li>Funções</li><p>(Lista 3)</p>
-  <li>Strings</li><p>(Lista 4)</p>
-  <li>Structs</li><p>(Lista 4)</p>
-  <li>Ponteiros</li><p>(Lista 5)</p>
-  <li>Alocação dinâmica</li><p>(Lista 5)</p>
-  <li>Pilhas</li><p>(Lista 6)</p>
-  <li>Filas</li><p>(Lista 7)</p>
+  <li>Arrays Unidimensionais e Multidimencionais - <b>(Lista 2)</b></li>
+  <li>Funções - <b>(Lista 3)</b></li>
+  <li>Strings - <b>(Lista 4)</b></li>
+  <li>Structs - <b>(Lista 4)</b></li>
+  <li>Ponteiros - <b>(Lista 5)</b></li>
+  <li>Alocação dinâmica - <b>(Lista 5)</b></li>
+  <li>Pilhas - <b>(Lista 6)</b></li>
+  <li>Filas - <b>(Lista 7)</b></li>
   <li>Listas Encadeadas</li>
   <li>Listas Duplamente Encadeadas</li>
   <li>Recursividade</li>
