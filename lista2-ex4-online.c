@@ -8,7 +8,7 @@ int main()
 {
     int vet[10], j = 10;
 
-    while (j >= 0)
+    while (j > 0)
     {
         scanf("%d", &vet[j]);
         j--;
