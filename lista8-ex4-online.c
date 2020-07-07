@@ -3,7 +3,8 @@
 1 - Inserir um nome na lista 
 2 - Retirar um nome da lista 
 3 - Mostrar quantos nome a lista possui 
-4 - Mostrar todos os nome da lista 0 - Sair 
+4 - Mostrar todos os nome da lista 
+0 - Sair 
 
 */
 #include <stdio.h>
@@ -11,15 +12,15 @@
 #include <string.h>
 typedef struct no
 {
-    char *nome;
+    char nome[100];
     struct no *proximo;
 } no;
-no *inicio;
+no *inicio = NULL;
 
-void inserefim(no *novo, char valor)
+void inserefim(no *novo, char valor[100])
 {
     no *p;
-    novo->nome = valor;
+    strcpy(novo->nome, valor);
     novo->proximo = NULL;
     if (inicio == NULL)
     {
@@ -40,7 +41,7 @@ void removeinicio()
 {
     if (inicio == NULL)
     {
-        printf("a lista esta vazia");
+        printf("A lista está vazia\n");
     }
     else
     {
@@ -84,7 +85,7 @@ void mostralista()
         p = inicio;
         while (p != NULL)
         {
-            puts(p->nome);
+            printf("%s\n", p->nome);
             p = p->proximo;
         }
     }
@@ -94,7 +95,7 @@ int main()
 {
     inicio = NULL;
     no *caixa;
-    int op;
+    int op = 0;
     char val[100];
     do
     {
@@ -104,14 +105,14 @@ int main()
         {
         case 1:
             printf("Digite um nome:\n");
-            scanf("%s", val);
+            gets(val);
             caixa = (struct no *)malloc(sizeof(no));
             if (!caixa)
             {
                 printf("memoria cheia:");
                 return;
             }
-
+            free(caixa);
             inserefim(caixa, val);
             break;
         case 2:
