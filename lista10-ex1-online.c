@@ -3,22 +3,20 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
+int pow(int base, int expoente)
+{
+    if (expoente == 0)
+    {
+        return 1;
+    }
+    return base * pow(base, expoente - 1);
+}
 int main()
 {
-    int x, y, res;
-    scanf("%d", &x);
-    scanf("%d", &y);
-    res = exponencial(x, y);
-    printf("%d\n", res);
+    int x, base, expoente;
+    printf("Informe a base e o expoente:\n");
+    scanf("%d %d", &base, &expoente);
+    x = pow(base, expoente);
+    printf("Resultado: %d\n", x);
     return 0;
-}
-int exponencial(int x, int y)
-{
-    int res = 0;
-    while (y >= 0)
-    {
-        res = x * x;
-        y--;
-    }
-    return res;
 }

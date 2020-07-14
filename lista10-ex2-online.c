@@ -3,8 +3,24 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
+int somatoria(int n);
 int main()
 {
-
+    // S(n) = n+(n-1)+(n-2)+(n-3)+...+1
+    int x, res = 0;
+    scanf("%d", &x);
+    res = somatoria(x);
+    printf("%d\n", res);
     return 0;
+}
+int somatoria(int n)
+{
+    if (n == 0)
+    {
+        return n;
+    }
+    else
+    {
+        return n + somatoria(n - 1);
+    }
 }
