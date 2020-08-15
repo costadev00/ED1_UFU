@@ -10,10 +10,10 @@ dessa matéria abrange conteúdos de :
   <li>Alocação dinâmica - <b>(Lista 5)</b></li>
   <li>Pilhas - <b>(Lista 6)</b></li>
   <li>Filas - <b>(Lista 7)</b></li>
-  <li>Listas Encadeadas</li>
+  <li>Listas Encadeadas  <b>(Lista 8)</b></li>
   <li>Listas Duplamente Encadeadas - <b>(Lista 8)</b></li>
-  <li>Recursividade</li>
-  <li>Métodos de Ordenação</li>
+  <li>Recursividade  <b>(Lista 9)</b></li>
+  <li>Métodos de Ordenação  <b>(Lista 10)</b></li>
   <li>Árvores</li>
 <ul>
   
