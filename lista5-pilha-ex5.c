@@ -58,16 +58,16 @@ int main()
             exit(0);
         }
         if (n > 0)
-
+        {
             vetres[cont] = n;
-        cont++;
+            cont++;
+        }
     }
-}
 
-for (int i = 0; i < 4; i++)
-{
-    res += vetres[i];
-}
-printf("A soma dos 4 elementos positivos eh de: %d\n", res);
-return 0;
+    for (int i = 0; i < 4; i++)
+    {
+        res += vetres[i];
+    }
+    printf("A soma dos 4 elementos positivos eh de: %d\n", res);
+    return 0;
 }
