@@ -10,7 +10,9 @@ int main()
 {
     char str1[100], str2[100];
     int tam1, tam2, cont = 0;
+    printf("Digite a primeira palavra\n");
     gets(str1);
+    printf("Digite a segunda palavra\n");
     gets(str2);
     tam1 = strlen(str1);
     tam2 = strlen(str2);
@@ -23,6 +25,8 @@ int main()
                 if (str1[i] == str2[j])
                 {
                     cont++;
+                    str2[j] = 0;
+                    break;
                 }
             }
         }
