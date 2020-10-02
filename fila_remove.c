@@ -11,18 +11,18 @@ struct fila
 
 ////////////////////////////////////
 void Inicia(struct fila *F);
-int Insere(struct fila *F,int X);
-int Removetroca(struct fila *F,int *X);
+int Insere(struct fila *F, int X);
+int Removetroca(struct fila *F, int *X);
 int mostrarelementos(struct fila F);
 ////////////////////////////////////
 
-int  main()
+int main()
 {
     int n, aux;
     struct fila F;
     Inicia(&F);
 
-    for(int i = 0; i<5; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf("Digite um elemento para inserir na fila: ");
         scanf("%d", &n);
@@ -33,17 +33,17 @@ int  main()
         printf("\n\n");
     }
 
-    Removetroca(&F,&aux);
-    printf("Elemento removido: [%d]\n\n",aux);
+    Removetroca(&F, &aux);
+    printf("Elemento removido: [%d]\n\n", aux);
     printf("\n");
 
-    Removetroca(&F,&aux);
-    printf("Elemento removido: [%d]\n\n",aux);
+    Removetroca(&F, &aux);
+    printf("Elemento removido: [%d]\n\n", aux);
 
     printf("Elementos na fila: ");
     mostrarelementos(F);
 
-    for(int i = 0; i<5; i++)
+    for (int i = 0; i < 5; i++)
     {
         printf("\nDigite um elemento para inserir na fila: ");
         scanf("%d", &n);
@@ -55,7 +55,6 @@ int  main()
     }
 
     return 0;
-
 }
 ////////////////////////////////////
 void Inicia(struct fila *F)
@@ -64,9 +63,10 @@ void Inicia(struct fila *F)
     (*F).fim = 0;
 }
 
-int Insere(struct fila *F,int X)
+int Insere(struct fila *F, int X)
 {
-    if((*F).fim==Max){
+    if ((*F).fim == Max)
+    {
         printf("Fila cheia!!");
         return 0;
     }
@@ -78,15 +78,17 @@ int Insere(struct fila *F,int X)
     }
 }
 
-int Removetroca(struct fila *F,int *X)
+int Removetroca(struct fila *F, int *X)
 {
-    if((*F).inicio==(*F).fim)
+    if ((*F).inicio == (*F).fim)
+    {
         return 0;
+    }
     else
     {
         *X = (*F).item[(*F).inicio];
-        for(int i=0; i<(*F).fim; i++)
-            (*F).item[i] = (*F).item[i+1];
+        for (int i = 0; i < (*F).fim; i++)
+            (*F).item[i] = (*F).item[i + 1];
         (*F).fim--;
         return 1;
     }
@@ -97,12 +99,12 @@ int mostrarelementos(struct fila F)
 
     int aux;
 
-    if(F.fim != F.inicio)
+    if (F.fim != F.inicio)
     {
-        while(F.fim!=F.inicio)
+        while (F.fim != F.inicio)
         {
             Removetroca(&F, &aux);
-            printf("[%d]\t",aux);
+            printf("[%d]\t", aux);
         }
         return 0;
     }

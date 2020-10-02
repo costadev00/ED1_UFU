@@ -1,43 +1,48 @@
-/*
-
-*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 int main()
 {
-    int mat[7][7], vet1[7], vet2[7], maior, menor;
-    for (int i = 0; i < 7; i++)
+    //abrir um arquivo
+    FILE *f, *g;
+    int v, mat[3][5], vet[15], i, soma = 0;
+    f = fopen("arq.txt", "r");
+    // g = fopen("narq.txt", "w");
+    if (f == NULL || g == NULL)
     {
-        for (int j = 0; j < 7; j++)
+        printf("Erro na abertura\n");
+    }
+
+    // i = 0;
+    while (!feof(f))
+    {
+        for (int i = 0; i < 5; i++)
         {
-            scanf("%d", &mat[i][j]);
-            maior = mat[i][j];
-            menor = mat[i][j];
+            for (int j = 0; j < 3; i++)
+            {
+                fscanf(f, "%i", &v);
+                mat[i][j] = v;
+            }
+            // }
+            // printf("%i ", v);
+            // i++;
         }
     }
-
-    for (int i = 0; i < 7; i++)
+    for (i = 0; i < 5; i++)
     {
-        for (int j = 0; j < 7; j++)
+        soma = 0;
+        for (int j = 0; j < 3; j++)
         {
-            if (mat[i][j] >= maior)
-            {
-                maior = mat[i][j];
-            }
-            if (menor <= mat[i][j])
-            {
-                menor = mat[i][j];
-            }
+            soma = soma + mat[i][j];
         }
-        vet1[i] = maior;
-        vet2[i] = menor;
+        printf("Linha %i = %i\n", i, soma);
+        fopen("narq.txt", "a+");
+        fprintf(f, "Soma = %d\n", soma);
+        fclose(f);
     }
-
-    for (int i = 0; i < 7; i++)
-    {
-        printf("vet1[%d] = %d\n", i, vet1[i]);
-        printf("vet2[%d] = %d\n", i, vet2[i]);
-    }
-
+    // printf("\n %i ", soma);
+    // fclose(f);
+    // fclose(g);
     return 0;
 }

@@ -3,7 +3,7 @@
 int main()
 {
     int n = 0, v = 0;
-    long fat;
+    int fat;
     printf("Insira um valor para o qual deseja calcular seu fatorial: ");
     scanf("%d", &n);
     fat = 1;

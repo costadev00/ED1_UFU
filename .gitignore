@@ -1,3 +1,5 @@
 *
 !*.c
 !*.cpp
+debug.c
+debug.cpp
