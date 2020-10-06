@@ -1,5 +1,5 @@
-*
-!*.c
-!*.cpp
+*.exe
+*.json
+*.txt
 debug.c
 debug.cpp
