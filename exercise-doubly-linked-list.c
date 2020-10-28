@@ -1,6 +1,6 @@
 /*
 Faça um programa que cadastre nome de pessoas de forma ordenada, use lista duplamente encadeada,
- o programa deve deixar remover uma pessoa qualquer (Exercício 04 da lista 09).
+o programa deve deixar remover uma pessoa qualquer (Exercício 04 da lista 09).
 
 Faça um vídeo demonstrando o uso do debug para testes com 5 (cinco) nomes diferentes iniciando cada um com as letras: M – A – V – C – S.
 */
