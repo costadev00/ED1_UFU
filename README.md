@@ -20,6 +20,6 @@ dessa matéria abrange conteúdos de :
   </center>
   <br>
   <center>
-  <img src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif"/>
+  <img align="left" src="https://media.giphy.com/media/iGpHt2H22k1orjgT9b/giphy.gif"/>
   <img align="right"src="/zmeme.jpg"/>
     </center>
